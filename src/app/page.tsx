@@ -3,7 +3,6 @@ import Link from "next/link";
 import {
   ArrowRight,
   Heart,
-  GraduationCap,
   HandHeart,
   Stethoscope,
   Utensils,
@@ -13,27 +12,27 @@ import HeroSlider from "@/components/sections/HeroSlider";
 
 const programs = [
   {
-    title: "Healthcare",
+    title: "Medical Missions",
     description:
-      "We connect underserved families and communities with essential healthcare, medicines, health education, and compassionate support.",
+      "We bring essential healthcare, medicines, health education, screenings, and compassionate medical support to underserved communities.",
     icon: Stethoscope,
-    href: "/what-we-do/healthcare",
+    href: "/what-we-do/medical-missions",
     accent: "#2FBBC9",
   },
   {
-    title: "Education",
+    title: "Free Clinic",
     description:
-      "We support children with the basic resources they need to stay in school and build a stronger future through education.",
-    icon: GraduationCap,
-    href: "/what-we-do/education",
+      "Our free clinic initiatives connect individuals and families with accessible healthcare services, screenings, treatment, and follow-up support.",
+    icon: Stethoscope,
+    href: "/what-we-do/free-clinic",
     accent: "#77C56D",
   },
   {
-    title: "Food Assistance",
+    title: "Food Pantry",
     description:
-      "We help families experiencing food insecurity by providing nutritious food and practical community support.",
+      "We support families experiencing food insecurity by providing essential food supplies through community-based food pantry events.",
     icon: Utensils,
-    href: "/what-we-do/food-assistance",
+    href: "/what-we-do/food-pantry",
     accent: "#D18051",
   },
 ];
@@ -95,12 +94,12 @@ export default function Home() {
 
             <div className="relative overflow-hidden rounded-[28px]">
               <Image
-                src="/images/medical-mission/Blessing-1.webp"
+                src="/images/team/blessing-1.webp"
                 alt="Blessings Heart Foundation"
-                width={4002}
-                height={6000}
+                width={1200}
+                height={1600}
                 priority
-                className="block h-auto w-full object-contain"
+                className="block h-auto w-full object-cover"
               />
             </div>
           </div>
@@ -133,7 +132,7 @@ export default function Home() {
             </p>
 
             <Link
-              href="/about"
+              href="/about/founder"
               className="mt-8 inline-flex items-center gap-2 font-bold text-[#11455A] transition hover:text-[#E84272]"
             >
               Discover Our Story
@@ -266,7 +265,7 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-4">
             <div className="overflow-hidden rounded-3xl">
               <Image
-                src="/images/medical-mission/Nurse-screening.webp"
+                src="/images/medical-mission/nurse-screening.webp"
                 alt="Medical mission patient screening"
                 width={640}
                 height={480}
@@ -276,7 +275,7 @@ export default function Home() {
 
             <div className="mt-10 overflow-hidden rounded-3xl">
               <Image
-                src="/images/medical-mission/Theatre.webp"
+                src="/images/medical-mission/theatre.webp"
                 alt="Medical mission operating theatre"
                 width={640}
                 height={480}
@@ -286,7 +285,7 @@ export default function Home() {
 
             <div className="overflow-hidden rounded-3xl">
               <Image
-                src="/images/medical-mission/Pharmacy.webp"
+                src="/images/medical-mission/pharmacy.webp"
                 alt="Medical mission pharmacy"
                 width={640}
                 height={480}
@@ -296,7 +295,7 @@ export default function Home() {
 
             <div className="mt-10 overflow-hidden rounded-3xl">
               <Image
-                src="/images/medical-mission/Eye-Clinic.webp"
+                src="/images/medical-mission/eye-clinic.webp"
                 alt="Medical mission eye clinic"
                 width={640}
                 height={480}
@@ -307,26 +306,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOD ASSISTANCE */}
+      {/* FOOD PANTRY */}
       <section className="bg-[#11455A]">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-8 lg:py-24">
           <div className="grid grid-cols-2 gap-4">
             <div className="overflow-hidden rounded-3xl">
               <Image
-                src="/images/food-pantry/473800565_581606211296084_1380424235356927064_n.webp"
-                alt="Blessings Heart Foundation food pantry"
+                src="/images/food-pantry/01-community-food-distribution.webp"
+                alt="Community food distribution at Blessings Heart Foundation food pantry"
                 width={1200}
-                height={1600}
+                height={900}
                 className="h-[240px] w-full object-cover sm:h-[300px]"
               />
             </div>
 
             <div className="mt-10 overflow-hidden rounded-3xl">
               <Image
-                src="/images/food-pantry/476237173_594288673361171_5209289745194682945_n.webp"
-                alt="Food pantry volunteers"
+                src="/images/food-pantry/05-volunteers-serving-families.webp"
+                alt="Blessings Heart Foundation volunteers serving families"
                 width={1200}
-                height={1600}
+                height={900}
                 className="h-[240px] w-full object-cover sm:h-[300px]"
               />
             </div>
@@ -345,9 +344,9 @@ export default function Home() {
             </h2>
 
             <p className="mt-6 leading-8 text-white/75">
-              Our annual Food Pantry events bring together volunteers, donors,
-              and local partners to distribute essential food supplies to
-              families experiencing economic hardship.
+              Our Food Pantry events bring together volunteers, donors, and
+              local partners to distribute essential food supplies to families
+              experiencing economic hardship.
             </p>
 
             <p className="mt-5 leading-8 text-white/75">
@@ -357,7 +356,7 @@ export default function Home() {
             </p>
 
             <Link
-              href="/what-we-do/food-assistance"
+              href="/what-we-do/food-pantry"
               className="mt-9 inline-flex items-center gap-2 rounded-full bg-[#E84272] px-7 py-3.5 font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#d93665]"
             >
               Learn About Our Food Pantry

@@ -39,7 +39,7 @@ const nigeriaTeam = [
     image: "/images/team/ifiok-mosses.webp",
   },
   {
-    name: "Uyobong Rev.",
+    name: "Rev. Uyobong",
     image: "/images/team/uyobong-rev.webp",
   },
 ];
